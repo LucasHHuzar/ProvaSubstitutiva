@@ -29,6 +29,7 @@ function ListarAluno() {
             <th>#</th>
             <th>Nome</th>
             <th>Sobrenome</th>
+            <th>CPF</th>
             <th>IMCs</th>
           </tr>
         </thead>
@@ -38,6 +39,7 @@ function ListarAluno() {
               <td>{aluno.id}</td>
               <td>{aluno.nome}</td>
               <td>{aluno.sobrenome}</td>
+              <td>{aluno.cpf}</td>
               <td>
                  <Link to={`/pages/imc-listar-por-aluno/${aluno.id}`}>
                  IMCs

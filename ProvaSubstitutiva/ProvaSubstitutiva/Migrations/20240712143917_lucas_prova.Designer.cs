@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ProvaSubstitutiva.Migrations
 {
     [DbContext(typeof(AppDataContext))]
-    [Migration("20240712133600_lucas_prova")]
+    [Migration("20240712143917_lucas_prova")]
     partial class lucas_prova
     {
         /// <inheritdoc />
@@ -53,6 +53,9 @@ namespace ProvaSubstitutiva.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Classificacao")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CriadoEm")
                         .HasColumnType("TEXT");
 
                     b.Property<double>("ImcReal")

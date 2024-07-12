@@ -25,7 +25,7 @@ function CadastrarAluno() {
     })
       .then((resposta) => resposta.json())
       .then((aluno: Aluno) => {
-        navigate("/");
+        navigate("/pages/aluno-listar");
       });
     e.preventDefault();
   }

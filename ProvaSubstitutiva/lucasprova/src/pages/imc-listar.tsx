@@ -31,6 +31,7 @@ function ListarImc() {
             <th>Classificação</th>
             <th>Grau de Obesidade</th>
             <th>Aluno ID</th>
+            <th>Data de Criação</th>
           </tr>
         </thead>
         <tbody>
@@ -43,6 +44,7 @@ function ListarImc() {
               <td>{imc.classificacao}</td>
               <td>{imc.obesidadeGrau}</td>
               <td>{imc.alunoId}</td>
+              <td>{imc.criadoEm}</td>
               {/* <td>
                 <button
                   onClick={() => {

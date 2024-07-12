@@ -10,5 +10,6 @@ public class Imc
     public int ObesidadeGrau { get; set; }
     public Aluno? Aluno { get; set; }
     public int? AlunoId { get; set; }
+    public DateTime CriadoEm { get; set; } = DateTime.Now;
     
 }

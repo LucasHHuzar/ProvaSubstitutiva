@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -36,7 +37,8 @@ namespace ProvaSubstitutiva.Migrations
                     Peso = table.Column<double>(type: "REAL", nullable: false),
                     Classificacao = table.Column<string>(type: "TEXT", nullable: true),
                     ObesidadeGrau = table.Column<int>(type: "INTEGER", nullable: false),
-                    AlunoId = table.Column<int>(type: "INTEGER", nullable: true)
+                    AlunoId = table.Column<int>(type: "INTEGER", nullable: true),
+                    CriadoEm = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -52,6 +52,9 @@ namespace ProvaSubstitutiva.Migrations
                     b.Property<string>("Classificacao")
                         .HasColumnType("TEXT");
 
+                    b.Property<DateTime>("CriadoEm")
+                        .HasColumnType("TEXT");
+
                     b.Property<double>("ImcReal")
                         .HasColumnType("REAL");
 

@@ -9,5 +9,6 @@ export interface Imc {
     alunoId?: string;
     classificacao?: string;
     obesidadeGrau?: string;
+    criadoEm?: string;
 }
   

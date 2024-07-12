@@ -7,8 +7,8 @@ POST http://localhost:5160/pages/aluno/cadastrar
 Content-Type: application/json
 
 {
-    "nome" : "Luciano",
-    "sobrenome" : "Silva",
+    "nome" : "Lucas",
+    "sobrenome" : "Huzar",
     "cpf" : 12
 }
 
@@ -19,7 +19,7 @@ Content-Type: application/json
 {
     "altura" : 1.86,
     "peso" : 95.0,
-    "alunoId" : 3
+    "alunoId" : 1
 }
 
 ### Listar IMCs

@@ -40,7 +40,7 @@ function CadastrarImc() {
     })
       .then((resposta) => resposta.json())
       .then((imc: Imc) => {
-        navigate("/");
+        navigate("/pages/imc-listar");
       });
     e.preventDefault();
   }
@@ -67,12 +67,8 @@ function CadastrarImc() {
         <label>Alunos:</label>
         <select onChange={(e: any) => setAlunoId(e.target.value)}>
           {aluno.map((aluno) => (
-            <option
-              value={aluno.id}
-              key={aluno.id}
-            >
+            <option value={aluno.id} key={aluno.id}>
               {aluno.nome}
-              {aluno.sobrenome}
             </option>
           ))}
         </select>
