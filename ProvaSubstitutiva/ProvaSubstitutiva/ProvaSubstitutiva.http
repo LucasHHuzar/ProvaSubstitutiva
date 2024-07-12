@@ -1,6 +1,39 @@
-@ProvaSubstitutiva_HostAddress = http://localhost:5160
 
-GET {{ProvaSubstitutiva_HostAddress}}/weatherforecast/
-Accept: application/json
+### Listar Alunos
+GET http://localhost:5160/pages/aluno/listar
 
-###
+### Cadastrar Alunos
+POST http://localhost:5160/pages/aluno/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Luciano",
+    "sobrenome" : "Silva",
+    "cpf" : 12
+}
+
+### Cadastrar IMC
+POST http://localhost:5160/pages/imc/cadastrar
+Content-Type: application/json
+
+{
+    "altura" : 1.86,
+    "peso" : 95.0,
+    "alunoId" : 3
+}
+
+### Listar IMCs
+GET http://localhost:5160/pages/imc/listar
+
+### Listar IMC por aluno
+GET http://localhost:5160/pages/imc/listarporaluno/2
+
+### Alterar IMC por id
+PUT http://localhost:5160/pages/imc/alterar/3
+Content-Type: application/json
+
+{
+    "altura" : 1.70,
+    "peso" : 80.0,
+    "alunoId" : 3
+}
